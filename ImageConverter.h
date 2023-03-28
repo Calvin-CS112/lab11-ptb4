@@ -29,6 +29,9 @@ public:
     ImageConverter(const std::string& imageFileName, int width, int height);
     ~ImageConverter();
     void run();
+    void invertImage();
+    void invertImage2();
+    void invertImage3();
 
 private:
     Canvas  myCanvas0;

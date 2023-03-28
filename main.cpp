@@ -11,8 +11,9 @@
 
 #include "ImageConverter.h"
 
-int main() {
-    ImageConverter iConverter("./pics/beads.jpg", 800, 800);
-    iConverter.run();
-}
+ int main() {
+      omp_set_num_threads(16);
+      ImageConverter iConverter("pics/colorfulCars.jpg", 800, 800);
+      iConverter.run();
+ }
 
